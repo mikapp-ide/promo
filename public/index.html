@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Mikapp</title>
+	<meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.min.css" />
+	<!--[if lt IE 9]>
+	<script src="js/libs/html5-3.6-respond-1.1.0.min.js"></script>
+	<![endif]-->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<!--[if lt IE 8 ]>	<body class="ie ie7">	  <![endif]-->
+<!--[if IE 8 ]>		<body class="ie ie8"> 	  <![endif]-->
+<!--[if IE 9 ]>		<body class="ie ie9">	  <![endif]-->
+<!--[if gt IE 9 ]>	<body class="ie ie10"> 	  <![endif]-->
+<!--[if IEMobile 7 ]><body class="iem iem7">  <![endif]-->
+<!--[if gt IEMobile 7><body class="iem iem75"><![endif]-->
+<!--[if !(IE) & !(IEMobile)]><!-->	<body><!--<![endif]-->
+<div class="wrapper">
+	<div class="header-container">
+		<img src="/img/logo.png" alt="Mikapp" />
+	</div>
+	<div class="content">
+		<div class="rubber">
+			<div class="main_block">
+				<h1><b>Mikapp</b> is the browser-based platform that allows you to easily create awesome Windows Store applications
+					<form id="sign-up-form" action="/signup" method="post">
+						<div id="form-div" class="form">
+							<input id="email-filed" name="email" type="email" required="" placeholder="Please enter your E-mail" />
+							<button class="btn" type="submit">Sign Up for Beta</button>
+						</div>
+					</form>
+				</h1>
+				<div id="form-submit-result" style="display:none;">
+					<p>Thanks for signing up for our private beta! We&apos;ll keep you posted.</p>
+				</div>
+			</div>
+			<div class="video_container">
+				<iframe src="http://www.youtube.com/embed/EwzPWSHY7jA?feature=player_detailpage&autoplay=1&vq=hd720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+				</iframe>
+			</div>
+			<div class="features">
+				<div class="item item_1">
+					<h2>Embrace Simplicity</h2>
+					<p>No need to install any software - create app directly from your favourite browser on any device.</p>
+				</div>
+				<div class="item item_2">
+					<h2>Focus On Your Idea</h2>
+					<p>Concentrate only on your awesome idea or business need. Zero programming skills required, just drag what you need and you're done.</p>
+				</div>
+				<div class="item item_3">
+					<h2>Be Genuine</h2>
+					<p>Configure your app in any way you want, everything is up to you. Design, features, behavior are yours, performance and stability - ours.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="rubber">
+			<div class="copy">
+				<p>Copyright &copy; 2013 Mikapp. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-39173823-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+</body>
+</html>
