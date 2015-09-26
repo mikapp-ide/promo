@@ -12,8 +12,8 @@ var app = express(),
 var smtpTransport = nodemailer.createTransport("SMTP",{
 	service: "Gmail",
 	auth: {
-		user: "eventy.feedback@gmail.com",
-		pass: "vqkpxmzqqttawkyh"
+		user: "{{account@account.com}}",
+		pass: "{{pass}}"
 	}
 });
 
@@ -30,8 +30,8 @@ app.post('/signup', function(req, res) {
 	if(data && data.email){
 		// send mail with defined transport object
 		smtpTransport.sendMail({
-			from: "eventy.feedback@gmail.com",
-			to: "aleh.zasypkin@gmail.com",
+			from: "{{from-account@account.com}}",
+			to: "{{to-account@account.com}}",
 			subject: "Mikapp: " + data.email + " subscribed",
 			text: data.email + " subscribed"
 		}, function(error, response){
